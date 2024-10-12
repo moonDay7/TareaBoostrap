@@ -1,0 +1,73 @@
+.padre
+{
+    padding: 5px;
+    background-color: rgb(184, 192, 235);
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas: "header header header"
+                            "nav    nav     nav"
+                            "cont1   cont2   cont3"
+                            "foot   foot    foot";
+
+}
+.padre .header
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: cursive;
+    grid-area: header;
+}   
+.padre .nav
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: nav;
+} 
+.padre .cont1
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: cont1;
+}                   
+.padre .cont2
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: cont2;
+} 
+.padre .cont3
+{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    margin-left: 10px;
+    grid-area: cont3;
+} 
+.padre .foot
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: foot;
+}
+.carousel-item img {
+    width: 100%;        
+    height: 400px;      
+    object-fit: cover;  
+}
+
+@media screen and (max-width:768px) {
+    .padre
+    {
+        background-color: rgb(184, 192, 235);
+        font-family: 'Courier New', Courier, monospace;
+        grid-template-areas: "header header header"
+                            "nav    nav     nav"
+                            "cont1 cont1    cont1 "
+                            "cont2   cont2  cont2"
+                            "cont3      cont3      cont3"
+                            "foot   foot    foot    ";
+    }
+}
